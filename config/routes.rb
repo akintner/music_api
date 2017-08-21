@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       post "albums/create", as: :create_albums
 
       resources :artists, param: :artist, only: [:show]
+
+      resources :years, only: [:index]
     end
   end
 
