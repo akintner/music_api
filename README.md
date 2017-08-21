@@ -8,11 +8,10 @@
 
 * Database Configuration: once you have cloned the repo and bundled for gems, you will have to set up the database on your local machine. To do this, please run the following commands from your terminal in order:
 <br>
-1. `rake db:create` (this will create the two postgresql databases needed to run the project)  
-2. `rake db:migrate` (this will load all the database tables with the information specified in the migration files)  
-3. `rake db:test:prepare` (this will ensure that you can run the test specs)  
-4. `rake db:import_csvs` (this will load all of the info from the CSV files into the database)  
-<br>
+rake db:create (this will create the two postgresql databases needed to run the project)  
+rake db:migrate (this will load all the database tables with the information specified in the migration files)  
+rake db:test:prepare (this will ensure that you can run the test specs)  
+rake db:import_csvs (this will load all of the info from the CSV files into the database)  
 <br>
 
 * How to run the program from your local browser: if you would like to run the program from your browser to see how the API is returning JSON objects, please type `puma` or `rails server` into the terminal and then open up a browser of your choice and type in the following basic URL `localhost:3000/api/v1/` to access the main directory of all artists (in alphabetical order) in the database. The following other paths are also available: 
