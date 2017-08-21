@@ -1,0 +1,9 @@
+<h2><%= @albums.first.artist %></h2>
+<% @albums.each do |album| %>
+  <ul>
+    <li><strong><%= album.title %></strong> from <%= album.year %></li>
+  </ul>
+<% end %>
+
+<br>
+<%= link_to "Return to Artists Index", api_v1_root_path %>
