@@ -7,9 +7,4 @@ class Api::V1::ArtistsController < ApplicationController
     @albums = Album.where(artist:params[:artist])
   end
 
-  private
-    def album_params
-      params.require(:album).permit(:title, :artist, :genre, :year)
-    end
-
 end
