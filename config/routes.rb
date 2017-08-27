@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       resources :artists, param: :artist, only: [:show]
 
       resources :years, only: [:index]
+
+      resources :genres, only: [:index]
     end
   end
 

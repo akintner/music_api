@@ -1,0 +1,9 @@
+<% @genres.each do |genre| %>
+  <h3> <%= genre.genre %></h3>
+  <p>Albums from the genre <strong><%= genre.genre %></strong> in our database, ranked by year of release: </p>
+    <% Album.albums_by_genre(genre.genre).each do |album| %>
+      <ul>
+       <li><%= album %></li>
+      </ul>
+    <% end %>
+<% end %>
