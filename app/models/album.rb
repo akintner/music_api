@@ -9,7 +9,7 @@ class Album < ApplicationRecord
   def self.albums_by_genre(genre)
     albums_by_genre = Album.where(genre: genre.to_s)
     ordered = albums_by_genre.order("year")
-    ordered_albums = ordered.collect(&:title)
+    ordered.collect(&:title)
   end
 
 end
